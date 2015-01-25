@@ -18,7 +18,7 @@ colnames(merge.sum) <- c('Year', 'Emissions')
 # changed from 1999-2008?
 
 # Generate the graph in the same directory as the source code
-png(filename='plot4.png')
+png(filename = 'plot4.png')
 
 ggplot(data = merge.sum, aes(x = Year, y = Emissions/1000)) + 
     geom_line(aes(group = 1, col = Emissions)) + geom_point(aes(size = 2, col = Emissions)) + 
